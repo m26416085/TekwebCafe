@@ -10,6 +10,10 @@
 		$password = $_POST['password'];
 		mysqli_query($con, "INSERT INTO admincafe VALUES (null, '$nama', '$lahir', '$jk', '$alamat', '$username', '$password')");
 		header("location: admincafe.php");
+	}
+	else if (isset($_POST['cancel']))
+	{
+		header("location: admincafe.php");
 	} 
 ?>
 
@@ -27,7 +31,8 @@
 		Alamat: <input type="text" name="alamat"><br>
 		Username: <input type="text" name="username"><br>
 		Password: <input type="password" name="password"><br>
-		<input type="submit" name="signup" value="Daftar"><br>
+		<input type="submit" name="signup" value="Daftar">
+		<input type="submit" name="cancel" value="Batal"><br>
 	</form>
 </body>
 </html>

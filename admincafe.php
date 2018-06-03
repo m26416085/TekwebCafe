@@ -35,5 +35,6 @@
 	<form action="newadmincafe.php" method="post">
 		<input type="submit" name="new" value="New Admin"><br>
 	</form>
+	<input type="submit" name="addmenu" value="Tambah Menu">
 </body>
 </html>
