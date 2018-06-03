@@ -15,7 +15,12 @@
 			}
 			else
 			{
-
+				echo "
+					<script type=\"text/javascript\">
+		           		alert('Username or Password is incorrect!');
+		        	</script>
+		        ";
+		        break;
 			}
 		}
 	}
