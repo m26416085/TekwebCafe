@@ -8,7 +8,6 @@
 	<title></title>
 </head>
 <body>
-	test home github
 	<a href="homecafe.php">Home</a>
 	<a href="menucafe.php">Menu</a>
 	<a href="eventcafe.php">Event</a>
