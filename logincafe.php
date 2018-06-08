@@ -2,6 +2,7 @@
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
 	if (isset($_POST['login']))
 	{
+		$cek = 0;
 		$result = mysqli_query($con, "SELECT * FROM admincafe");
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -9,19 +10,19 @@
 		{
 			if ($row['username'] == $username && $row['password'] == $password)
 			{
+				$cek = 1;
 				session_start();
+				$_SESSION['idnow'] = $row['id'];
 				$_SESSION["usernow"] = $row['nama'];
 				header("location: admincafe.php");
 			}
-			else
-			{
-				echo "
-					<script type=\"text/javascript\">
-		           		alert('Username or Password is incorrect!');
-		        	</script>
+		}
+		if ($cek == 0){
+			echo "
+				<script type=\"text/javascript\">
+		         	alert('Username or Password is incorrect!');
+		       	</script>
 		        ";
-		        break;
-			}
 		}
 	}
 ?>
