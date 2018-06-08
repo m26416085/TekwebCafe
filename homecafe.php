@@ -14,6 +14,6 @@
 	<a href="aboutuscafe.php">About Us</a>
 	<a href="contactus.php">Contact Us</a>
 	<a href="logincafe.php">Login</a><br>
-	Home Here! ASD
+	Home Here!
 </body>
 </html>
