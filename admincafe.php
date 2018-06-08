@@ -41,5 +41,8 @@
 		<input type="submit" name="data" value="Data Admin">
 	</form>
 	<input type="submit" name="addmenu" value="Tambah Menu">
+	<form action="neweventadmincafe.php" method="post">
+		<input type="submit" name="event" value="Event Baru">
+	</form>
 </body>
 </html>
