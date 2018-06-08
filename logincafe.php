@@ -12,6 +12,7 @@
 			{
 				$cek = 1;
 				session_start();
+				$_SESSION['idnow'] = $row['id'];
 				$_SESSION["usernow"] = $row['nama'];
 				header("location: admincafe.php");
 			}

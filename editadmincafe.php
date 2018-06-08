@@ -1,5 +1,6 @@
 <?php
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
+	session_start();
 	if (isset($_POST['save']))
 	{
 		$result = mysqli_query($con, "SELECT * FROM admincafe");
@@ -17,7 +18,12 @@
 	}
 	else if (isset($_POST['cancel']))
 	{
-		header("location: dataadmincafe.php");
+		if ($_SESSION['idnow'] == $_GET['id']){
+			header("location: dataadmincafe.php");
+		}
+		else{
+			header("location: admincafe.php");
+		}
 	} 
 ?>
 
@@ -33,7 +39,7 @@
 		Tanggal Lahir: <input type="date" name="date" min="1950-01-01" max="2000-01-01" value="<?php echo date('Y-m-d',strtotime($_GET['tgllahir'])); ?>"><br>
 		Jenis Kelamin: <input type="radio" name="jk" value="L"> Pria <input type="radio" name="jk" value="W"> Wanita<br>
 		Alamat: <input type="text" name="alamat" value="<?php echo $_GET['alamat']; ?>"><br>
-		Username: <input type="text" name="username"><br>
+		Username: <input type="text" name="username" value="<?php echo $_GET['username']?>"><br>
 		Password: <input type="password" name="password"><br>
 		<input type="submit" name="save" value="Simpan">
 		<input type="submit" name="cancel" value="Batal"><br>

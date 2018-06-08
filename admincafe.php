@@ -17,6 +17,8 @@
 			echo "Jenis Kelamin: ".$row["jk"]."<br>";
 			echo "Alamat: ".$row["alamat"]."<br>";
 			/*echo '<a href="editdata.php? id='.$row[0].'&name='.$row[1].'&gender='.$row[3].'&alamat='.$row[2].'&umur='.$row[4].'"><button> Edit </button></a>';*/
+			echo '<a href="editadmincafe.php? id='.$row[0].'&name='.$row[1].'&tgllahir='.$row[2].'&jk='.$row[3].'&alamat='.$row[4].'&username='.$row[5].'"><button> Edit </button></a>';
+			//echo '<a href="deleteadmincafe.php? id='.$row[0].'""><button>Hapus</button></a>';
 			echo "<br />";
 		}
 		
