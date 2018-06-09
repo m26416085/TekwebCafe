@@ -40,11 +40,15 @@
 	<form action="dataadmincafe.php" method="post">
 		<input type="submit" name="data" value="Data Admin">
 	</form>
+<<<<<<<<<<<<<<<
 	<form action = "add_drink_menucafe.php" method = "post">
 		<input type="submit" name="addmenuf" value="Tambah Menu Minuman">
 	</form>
 	<form action = "edit_drink_menucafe.php" method = "post">
-		<input type="submit" name="editmenud" value="Edit Menu Minuman"><br>
+		<input type="submit" name="editmenud" value="Edit Menu Minuman">
+	</form>
+	<form action = "delete_drink_menucafe.php" method = "post">
+		<input type="submit" name="editmenuf" value="Delete Menu Minuman">
 	</form>
 	<form action = "add_food_menucafe.php" method = "post">
 		<input type="submit" name="addmenud" value="Tambah Menu Makanan">
@@ -52,6 +56,10 @@
 	<form action = "edit_food_menucafe.php" method = "post">
 		<input type="submit" name="editmenuf" value="Edit Menu Makanan">
 	</form>
+	<form action = "delete_food_menucafe.php" method = "post">
+		<input type="submit" name="editmenuf" value="Delete Menu Makanan">
+	</form>
 </body>
+>>>>>>>>>>>>>>
 </body>
 </html>
