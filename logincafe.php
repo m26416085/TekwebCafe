@@ -3,6 +3,7 @@
 	if (isset($_POST['login']))
 	{
 		$cek = 0;
+		$cek1 = 0;
 		$result = mysqli_query($con, "SELECT * FROM admincafe");
 		$username = $_POST['username'];
 		$password = $_POST['password'];
@@ -14,15 +15,31 @@
 				session_start();
 				$_SESSION['idnow'] = $row['id'];
 				$_SESSION["usernow"] = $row['nama'];
+				session_start();
 				header("location: admincafe.php");
 			}
 		}
 		if ($cek == 0){
-			echo "
-				<script type=\"text/javascript\">
-		         	alert('Username or Password is incorrect!');
-		       	</script>
-		        ";
+			if(isset($_POST['login']))
+			{
+					$cek1 = 0;
+					$result1= msqli_query($con,"SELECT * FROM membercafe");
+					while ($row = mysqli_fetch_array($result))
+					{
+						if ($row['username'] == $username && $row['password'] == $password)
+						{
+							$cek1 = 1;
+							session_start();
+							$_SESSION['idnow'] = $row['id'];
+							$_SESSION["usernow"] = $row['nama'];
+							header("location: eventcafe.php");
+						}
+					}
+					if($cek1==0 )
+					{
+						echo "<script type=\"text/javascript\">alert('Username or Password is incorrect!');</script>";
+					}
+			}
 		}
 	}
 ?>
