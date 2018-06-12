@@ -28,26 +28,24 @@
       }
     }
     if ($cek == 0){
-      if(isset($_POST['login']))
-      {
+          $con1 = mysqli_connect("localhost", "root", "", "dbcafe");
           $cek1 = 0;
-          $result1= msqli_query($con,"SELECT * FROM membercafe");
-          while ($row = mysqli_fetch_array($result))
+          $result1 = mysqli_query($con1, "SELECT * FROM membercafe");
+          while ($row1 = mysqli_fetch_array($result1))
           {
-            if ($row['username'] == $username && $row['password'] == $password)
+            if ($row1['username'] == $username && $row1['password'] == $password)
             {
               $cek1 = 1;
               session_start();
-              $_SESSION['idnow'] = $row['id'];
-              $_SESSION["usernow"] = $row['nama'];
-              header("location: eventcafe.php");
+              $_SESSION['idnow'] = $row1['id'];
+              $_SESSION["usernow"] = $row1['nama'];
+              header("location: datamembercafe.php");
             }
           }
           if($cek1==0 )
           {
             echo "<script type=\"text/javascript\">alert('Username or Password is incorrect!');</script>";
           }
-      }
     }
   }
 ?>
@@ -80,7 +78,7 @@
      <li>
      <div class="row">
      <div class="col-md-12">
-        <form action = logincafe.php method = "post">
+        <form action = homecafe.php method = "post">
 				Username: <input type="text" name="username"><br>
 				Password: <input type="password" name="password"><br>
 				<input type="submit" name="login" value ="Login">

@@ -1,5 +1,8 @@
 <?php
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
+	if(empty($_SESSION['idnow'])){
+    header("location: homecafe.php");
+	}
 	if (isset($_POST['login']))
 	{
 		$cek = 0;
