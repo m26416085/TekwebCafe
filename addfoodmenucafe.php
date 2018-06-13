@@ -30,7 +30,7 @@ require_once("connect1.php");
 			</tr>
 			<tr>
 				<td>Image</td>
-				<td><input type = "text" name = "image"></td>
+				<td><input type = "blob" name = "image"></td>
 			</tr>
 			<tr>
 				<td>Type</td>
