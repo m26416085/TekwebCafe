@@ -1,9 +1,12 @@
 <?php
 	session_start();
+	if(empty($_SESSION['idnow'])){
+    header("location: homecafe.php");
+	}
 	if (isset($_POST['logout']))
 	{
 		session_destroy();
-		header("location: logincafe.php");
+		header("location: homecafe.php");
 	}
 	echo "Current Admin: ".$_SESSION['usernow']."<br>";
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
