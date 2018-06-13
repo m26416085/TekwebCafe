@@ -26,16 +26,17 @@ require_once("connect1.php");
 			</tr>
 			<tr>
 				<td>Description</td>
-				<td><input type = "text" name = "description"></td>
+				<td><input type = "textarea" name = "description"></td>
 			</tr>
 			<tr>
 				<td>Image</td>
 				<td><input type = "blob" name = "image"></td>
 			</tr>
-			<tr>
-				<td>Type</td>
-				<td><input type = "text" name = "type"></td>
-			</tr>
+			<select name="type">
+			<option >Appertizer</option>
+			<option >Main Course</option>
+			<option >Dessert</option>
+			</select><br>
 		</table>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Add Data">

@@ -26,19 +26,16 @@
 			</tr>
 			<tr>
 				<td>Description</td>
-				<td><input type = "text" name = "description"></td>
+				<td><input type = "textarea" name = "description"></td>
 			</tr>
 			<tr>
 				<td>Image</td>
 				<td><input type = "text" name = "image"></td>
 			</tr>
-			<tr>
-				<td>Type</td>
-				<td><input type = "text" name = "type"></td>
-			</tr>
+			<select name="type">
+			<option >Drinks</option>
+			</select><br>
 		</table>
-		
-
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Edit Data">
 		<input type="submit" name="back" value="Kembali">
