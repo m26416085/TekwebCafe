@@ -34,7 +34,7 @@
 </head>
 <body>
 	<form action="editmembercafe.php" method="post">
-		ID Admin: <input type="text" name="id" value="<?php echo $_GET['id']; ?>" readOnly><br>
+		ID Member: <input type="text" name="id" value="<?php echo $_GET['id']; ?>" readOnly><br>
 		Nama: <input type="text" name="nama" value="<?php echo $_GET['name']; ?>"><br>
 		Tanggal Lahir: <input type="date" name="date" min="1950-01-01" max="2000-01-01" value="<?php echo date('Y-m-d',strtotime($_GET['tgllahir'])); ?>"><br>
 		Jenis Kelamin: <input type="radio" name="jk" value="L"> Pria <input type="radio" name="jk" value="W"> Wanita<br>
