@@ -61,10 +61,10 @@
 	<form action = "deletefoodmenucafe.php" method = "post">
 		<input type="submit" name="editmenuf" value="Delete Menu Makanan">
 	</form>
-</body>
+
 	<form action="neweventadmincafe.php" method="post">
 		<input type="submit" name="event" value="Event Baru">
 	</form>
-
 </body>
+	
 </html>
