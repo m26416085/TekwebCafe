@@ -20,7 +20,13 @@
 	}
 	if(isset($_POST['back']))
 	{
+		session_destroy();
 		header("location: homecafe.php");	
+	}
+	if(isset($_POST['event']))
+	{
+		session_destroy();
+		header("location: eventcafe.php");	
 	}
 ?>
 
@@ -31,7 +37,8 @@
 </head>
 <body>
 	<form action="datamembercafe.php" method="post">
-		<input type="submit" name="back" value="Kembali">
+		<input type="submit" name="event" value="Event">
+		<input type="submit" name="back" value="Exit">
 	</form>
 </body>
 </html>
