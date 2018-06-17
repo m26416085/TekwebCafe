@@ -36,7 +36,7 @@
 		Username: <input type="text" name="username" required><br>
 		Password: <input type="password" name="password" required><br>
 		<input type="submit" name="signup" value="Daftar">
-		<input type="submit" name="cancel" value="Batal"><br>
+		<button><a href="admincafe.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 </body>
 </html>

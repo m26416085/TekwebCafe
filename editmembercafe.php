@@ -42,7 +42,7 @@
 		Username: <input type="text" name="username" value="<?php echo $_GET['username']?>"><br>
 		Password: <input type="password" name="password"><br>
 		<input type="submit" name="save" value="Simpan">
-		<input type="submit" name="cancel" value="Batal"><br>
+		<button><a href="admincafe.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 </body>
 </html>
