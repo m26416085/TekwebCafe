@@ -60,18 +60,17 @@
 		<input type="submit" class="btn-success" name="datafood" value="Data Menu Makanan">
 	</form>
 
-<<<<<<< HEAD
 	<form action="neweventadmincafe.php" method="post">
 		<input type="submit" class="btn-success" name="event" value="Event Baru">
 	</form>
 
+	<form action="dataeventcafe.php" method="post">
+		<input type="submit" class="btn-success" name="event" value="Data Event">
+	</form>
+
 	<form action="admincafe.php" method="POST">
 		<input type="submit" class="btn-danger" name="logout" value="Logout">
-=======
-	<form action="dataeventcafe.php" method="post">
-		<input type="submit" name="event" value="Data Event">
->>>>>>> 26412febc45902ec3af4782ce4af616ce8bc3e88
-	</form>
+	
 </body>
 	
 </html>
