@@ -3,18 +3,23 @@
 	$result = mysqli_query($con, "SELECT * FROM eventcafe");
 	while ($row = mysqli_fetch_array($result))
 	{
-		echo "Nama Event: ".$row["namaevent"]."<br>";
+		/*echo "Nama Event: ".$row["namaevent"]."<br>";
 		echo "Deskripsi Event: ".$row["deskripsievent"]."<br>";
 		echo "Tanggal Event: ".$row["tanggalevent"]."<br>";
 		echo "Kode Promo: ".$row["kodepromoevent"]."<br>";
 		echo "Gambar: ".$row["gambarevent"]."<br>";
 		echo '<a href="? idevent='.$row[0].'&namaevent='.$row[1].'&deskripsi='.$row[2].'&tanggal='.$row[3].'&kodepromo='.$row[4].'&gambar='.$row[5].'"><button> Edit </button></a>';
 		echo '<a href="? idevent='.$row[0].'""><button>Hapus</button></a>';
-		echo "<br />";
+		echo "<br />";*/
 	}
 	if (isset($_POST['tambah']))
 	{
-
+		$nama = $_POST['nama'];
+		$tanggal = $_POST['tanggal'];
+		$deskripsi = $_POST['jk'];
+		$promo = $_POST['kodepromo'];
+		mysqli_query($con, "INSERT INTO eventcafe VALUES (null, '$nama', '$deksripsi', '$tanggal', '$promo', '$gambar')");
+		header("location: admincafe.php");
 	}
 	else if (isset($_POST['cancel']))
 	{
@@ -28,11 +33,11 @@
 	<title></title>
 </head>
 <body>
-	<form action="neweventadmincafe.php" method="post">
+	<form action="neweventadmincafe.php" method="post" enctype="multipart/form-data">
 		Nama Event: <input type="text" name="nama"> <input type="checkbox" name="butuh" onclick="cekpromo()" id="cb1">Centang jika menggunakan kode promo <br>
 		Deskripsi Event: <br><textarea rows="15" cols="60" placeholder="Masukkan deskripsi..."></textarea> <br>
 		Tanggal Event: <input type="date" name="tanggal""> <br>
-		Upload Gambar: 
+		Upload Gambar: <input type="file" name="upload" id="upload"> <br>
 		<p id="kp" style="display: none">Kode Promo: <input type="text" name="kodepromo"></p><br>
 		<script type="text/javascript">
 			function cekpromo(){

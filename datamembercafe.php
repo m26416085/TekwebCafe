@@ -7,7 +7,7 @@
 	$result = mysqli_query($con, "SELECT * FROM membercafe");
 	while ($row = mysqli_fetch_array($result))
 	{
-		if ($row['id'] != $_SESSION['idnow']){
+		if ($row['id'] == $_SESSION['idnow']){
 			echo "Nama: ".$row["nama"]."<br>";
 			echo "Tanggal Lahir: ".$row["tgllahir"]."<br>";
 			echo "Jenis Kelamin: ".$row["jk"]."<br>";
@@ -18,7 +18,7 @@
 			echo "<br />";
 		}
 	}
-	if(isset($_POST['Kembali']))
+	if(isset($_POST['back']))
 	{
 		header("location: homecafe.php");	
 	}

@@ -54,6 +54,9 @@
 	.carousel-inner{
 		height: 700px;
 	}
+  #map{
+    height: 64%;
+  }
 	.carousel-caption{
 		padding-bottom: 300px;
 	}
@@ -65,10 +68,10 @@
 </style>
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#" style="margin-right: 400px;">SelJeff</a>
+      <a class="navbar-brand" href="homecafe.php" style="margin-right: 500px;">SelJeff</a>
     </div>
     <ul class="nav navbar-nav">
-      <li><a href="#">Home</a></li>
+      <li><a href="homecafe.php">Home</a></li>
       <li><a href="#">Menu</a></li>
       <li><a href="#">Event</a></li>
      <ul class="nav navbar-nav navbar-right">
@@ -79,9 +82,9 @@
      <div class="row">
      <div class="col-md-12">
         <form action = homecafe.php method = "post">
-				Username: <input type="text" name="username"><br>
-				Password: <input type="password" name="password"><br>
-				<input type="submit" name="login" value ="Login">
+				Username:<br> <input type="text" name="username"><br><br>
+				Password:<br> <input type="password" name="password"><br><br>
+				<input type="submit" class="btn btn-success btn-block" name="login" value ="Login"><br>
 			</form>
      </div>
      <div class="bottom text-center">
@@ -93,7 +96,6 @@
      </li>
      </ul>
      </ul>
-    </div>
  </nav>
 </head>
 <body>
@@ -149,7 +151,7 @@
   	 <div class="row">
             <div class="col-md-4">
             <img src="1.jpg" width="150" height="150" class="img-circle" style="margin-left: 70px;"><br><br>
-			A steak (/ˈsteɪk/) is a meat generally sliced across the muscle fibers, potentially including a bone. Exceptions, in which the meat is sliced parallel to the fibers, include the skirt steak that is cut from the plate, the flank steak that is cut from the abdominal muscles, and the Silverfinger steak that is cut from the loin and includes three rib bones. When the word "steak" is used without qualification, it generally refers to a beefsteak. In a larger sense, there are also fish steaks, ground meat steaks, pork steak and many more varieties of steaks.
+			       A steak (/ˈsteɪk/) is a meat generally sliced across the muscle fibers, potentially including a bone. Exceptions, in which the meat is sliced parallel to the fibers, include the skirt steak that is cut from the plate, the flank steak that is cut from the abdominal muscles, and the Silverfinger steak that is cut from the loin and includes three rib bones. When the word "steak" is used without qualification, it generally refers to a beefsteak.
 
             </div>
             <div class="col-md-4">
@@ -165,11 +167,42 @@
         </div>
   </div>
 
+ <div class="container">
+<h2>Where To Find Us</h2>
+<div id="map"></div>
+    <script>
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: new google.maps.LatLng(  -0.504823, 117.143615),
+          zoom: 16
+        });
+        var infoWindow = new google.maps.InfoWindow;
+        }
 
-  <div class="container">
-    <br><br>
-    
-  </div>
+
+
+      function downloadUrl(url, callback) {
+        var request = window.ActiveXObject ?
+            new ActiveXObject('Microsoft.XMLHTTP') :
+            new XMLHttpRequest;
+
+        request.onreadystatechange = function() {
+          if (request.readyState == 4) {
+            request.onreadystatechange = doNothing;
+            callback(request, request.status);
+          }
+        };
+
+        request.open('GET', url, true);
+        request.send(null);
+      }
+
+      function doNothing() {}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkXET2qeGgLJOS6BR23VZLIgalJk4zxDo&callback=initMap">
+    </script>
+</div>
 </body>
 <footer class="page-footer font-small mt-4">
 

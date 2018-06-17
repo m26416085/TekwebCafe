@@ -50,10 +50,10 @@
 	<form action = "datamenumakanan.php" method = "post">
 		<input type="submit" name="datafood" value="Data Menu Makanan">
 	</form>
-</body>
+
 	<form action="neweventadmincafe.php" method="post">
 		<input type="submit" name="event" value="Event Baru">
 	</form>
-
 </body>
+	
 </html>
