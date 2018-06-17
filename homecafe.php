@@ -56,6 +56,7 @@
 	}
   #map{
     height: 64%;
+    width: 64%;
   }
 	.carousel-caption{
 		padding-bottom: 300px;
@@ -166,43 +167,6 @@
             </div>                
         </div>
   </div>
-
- <div class="container">
-<h2>Where To Find Us</h2>
-<div id="map"></div>
-    <script>
-        function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: new google.maps.LatLng(  -0.504823, 117.143615),
-          zoom: 16
-        });
-        var infoWindow = new google.maps.InfoWindow;
-        }
-
-
-
-      function downloadUrl(url, callback) {
-        var request = window.ActiveXObject ?
-            new ActiveXObject('Microsoft.XMLHTTP') :
-            new XMLHttpRequest;
-
-        request.onreadystatechange = function() {
-          if (request.readyState == 4) {
-            request.onreadystatechange = doNothing;
-            callback(request, request.status);
-          }
-        };
-
-        request.open('GET', url, true);
-        request.send(null);
-      }
-
-      function doNothing() {}
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkXET2qeGgLJOS6BR23VZLIgalJk4zxDo&callback=initMap">
-    </script>
-</div>
 </body>
 <footer class="page-footer font-small mt-4">
 

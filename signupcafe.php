@@ -11,10 +11,6 @@
 		mysqli_query($con, "INSERT INTO membercafe VALUES (null,'$nama','$lahir','$jk','$alamat','$username','$password')");
 		header("location: eventcafe.php");
 	}
-	else if(isset($_POST['cancel']))
-	{
-		header("location: homecafe.php");
-	}
 ?>
 
 <!DOCTYPE html>
