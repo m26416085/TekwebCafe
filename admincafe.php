@@ -43,28 +43,17 @@
 	<form action="dataadmincafe.php" method="post">
 		<input type="submit" name="data" value="Data Admin">
 	</form>
-	<form action = "adddrinkmenucafe.php" method = "post">
-		<input type="submit" name="addmenud" value="Tambah Menu Minuman">
+	<form action = "datamenuminuman.php" method = "post">
+		<input type="submit" name="datadrink" value="Data Menu Minuman">
 	</form>
-	<form action = "editdrinkmenucafe.php" method = "post">
-		<input type="submit" name="editmenud" value="Edit Menu Minuman">
+
+	<form action = "datamenumakanan.php" method = "post">
+		<input type="submit" name="datafood" value="Data Menu Makanan">
 	</form>
-	<form action = "deletedrinkmenucafe.php" method = "post">
-		<input type="submit" name="editmenud" value="Delete Menu Minuman">
-	</form>
-	<form action = "addfoodmenucafe.php" method = "post">
-		<input type="submit" name="addmenuf" value="Tambah Menu Makanan">
-	</form>
-	<form action = "editfoodmenucafe.php" method = "post">
-		<input type="submit" name="editmenuf" value="Edit Menu Makanan">
-	</form>
-	<form action = "deletefoodmenucafe.php" method = "post">
-		<input type="submit" name="editmenuf" value="Delete Menu Makanan">
-	</form>
-</body>
+
 	<form action="neweventadmincafe.php" method="post">
 		<input type="submit" name="event" value="Event Baru">
 	</form>
-
 </body>
+	
 </html>

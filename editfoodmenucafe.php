@@ -9,10 +9,6 @@
 	<form method = "post" action = "editfood.php">
 		<table>
 			<tr>
-				<td>Id</td>
-				<td><input type = "text" name = "id"></td>
-			</tr>
-			<tr>
 				<td>Name</td>
 				<td><input type = "text" name = "name"></td>
 			</tr>
@@ -31,13 +27,15 @@
 			<tr>
 				<td>Image</td>
 				<td><input type = "text" name = "image"></td>
-			</tr>
+			</table>
+			<tr>
+			<td>Type</td>
 			<select name="type">
 			<option >Appertizer</option>
 			<option >Main Course</option>
 			<option >Dessert</option>
 			</select><br>
-		</table>
+		</tr>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Edit Data">
 		<input type="submit" name="back" value="Kembali">

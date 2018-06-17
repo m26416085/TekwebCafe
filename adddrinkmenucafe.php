@@ -32,10 +32,11 @@ require_once("connect1.php");
 				<td>Image</td>
 				<td><input type = "blob" name = "image"></td>
 			</tr>
+		</table>
+			<td>Type</td>
 			<select name="type">
 			<option >Drinks</option>
 			</select><br>
-		</table>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Add Data">
 		<input type="submit" name="back" value="Kembali">
