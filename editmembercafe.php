@@ -21,28 +21,97 @@
 			header("location: eventcafe.php");
 			}
 		}
-	else if (isset($_POST['cancel']))
-	{
-		header("location: datamembercafe.php");
-	} 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
+	<script type="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   
+	<style type="text/css">
+	#form
+    	{
+    		margin-top: 5%;
+    		width: 50%;
+    		margin-left: 25%;
+    	}
+    </style>
 </head>
 <body>
-	<form action="editmembercafe.php" method="post">
-		ID Member: <input type="text" name="id" value="<?php echo $_GET['id']; ?>" readOnly><br>
-		Nama: <input type="text" name="nama" value="<?php echo $_GET['name']; ?>"><br>
-		Tanggal Lahir: <input type="date" name="date" min="1950-01-01" max="2000-01-01" value="<?php echo date('Y-m-d',strtotime($_GET['tgllahir'])); ?>"><br>
-		Jenis Kelamin: <input type="radio" name="jk" value="L"> Pria <input type="radio" name="jk" value="W"> Wanita<br>
-		Alamat: <input type="text" name="alamat" value="<?php echo $_GET['alamat']; ?>"><br>
-		Username: <input type="text" name="username" value="<?php echo $_GET['username']?>"><br>
-		Password: <input type="password" name="password"><br>
-		<input type="submit" name="save" value="Simpan">
-		<button><a href="datamembercafe.php" style="text-decoration: none;">Cancel</a></button>
-	</form>
+	<form id="form" class="form-horizontal" action="editmembercafe.php" method="post">
+          <fieldset>
+            <div id="legend" >
+              <legend class="" style="font-size: 60px; text-align: center;">Edit Data Member</legend>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="id">ID</label>
+              <div class="controls">
+                <input type="text" name="id" placeholder="" class="form-control input-lg" value="<?php echo $_GET['id']; ?>" readOnly>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="nama">Nama</label>
+              <div class="controls">
+                <input type="text" name="nama" placeholder="" class="form-control input-lg"  value="<?php echo $_GET['name']; ?>" required="">
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <label class="control-label" for="date">Tanggal Lahir</label>
+              <div class="controls">
+                <input type="date" name="date" placeholder=""  min="1950-01-01" max="2000-01-01" class="form-control input-lg"  value="<?php echo date('Y-m-d',strtotime($_GET['tgllahir'])); ?>" required="">
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <label class="control-label" for="jk">Jenis Kelamin</label>
+              <div class="controls">
+                <input type="radio" name="jk" value="L">Pria
+                <input type="radio" name="jk" value="W">Wanita
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <label class="control-label" for="alamat">Alamat</label>
+              <div class="controls">
+                <input type="text" name="alamat" placeholder="" class="form-control input-lg" value="<?php echo $_GET['alamat']; ?>">
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label" for="usename">Username</label>
+              <div class="controls">
+                <input type="text" name="username" placeholder="" class="form-control input-lg" required=""  value="<?php echo $_GET['username']?>">
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label" for="password">Password</label>
+              <div class="controls">
+                <input type="password" name="password" placeholder="" class="form-control input-lg" required="">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <!-- Button -->
+              <br>
+              <div class="controls">
+                <input type="submit" name="signup" class="btn btn-success btn-block" value="Signup">
+              </div>
+            </div>
+
+             <div class="control-group">
+              <!-- Button -->
+              <br>
+              <div class="controls">
+              <button class="btn btn-warning"><a href="datamembercafe.php" style="text-decoration: none;">Cancel</a></button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
 </body>
 </html>

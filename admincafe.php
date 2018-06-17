@@ -37,7 +37,7 @@
 	<style type="text/css">
     body
     	{
-    		margin-top: 10%;
+    		margin-top: 5%;
     		width: 50%;
     		margin-left: 25%;
     	}
