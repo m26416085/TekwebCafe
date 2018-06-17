@@ -8,10 +8,7 @@
 <body>
 	<form method = "post" action = "editdrink.php">
 		<table>
-			<tr>
-				<td>Id</td>
-				<td><input type = "text" name = "id"></td>
-			</tr>
+			
 			<tr>
 				<td>Name</td>
 				<td><input type = "text" name = "name"></td>
@@ -30,13 +27,14 @@
 			</tr>
 			<tr>
 				<td>Image</td>
-				<td><input type = "text" name = "image"></td>
+				<td><input type = "file" name = "image"></td>
 			</tr>
+			</table>
+			<td>Type</td>
 			<select name="type">
 			<option >Drinks</option>
 			</select><br>
-		</table>
-		<form action="admincafe.php" method="post">
+		<form action="datamenuminuman.php" method="POST">
 		<input type = "submit" value = "Edit Data">
 		<input type="submit" name="back" value="Kembali">
 	</form>
