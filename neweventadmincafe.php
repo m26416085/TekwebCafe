@@ -48,14 +48,12 @@
 		    }
 		}
 
-
-
 	    $image=basename( $_FILES["upload"]["name"]); // used to store the filename in a variable
 		$nama = $_POST['nama'];
 		$tanggal = $_POST['tanggal'];
 		$deskripsi = $_POST['deskripsi'];
 		$promo = $_POST['kodepromo'];
-		mysqli_query($con, "INSERT INTO eventcafe VALUES (null, '$nama', '$deksripsi', '$tanggal', '$promo', '$image')");
+		mysqli_query($con, "INSERT INTO eventcafe VALUES (null, '$nama', '$deskripsi', '$tanggal', '$promo', '$image')");
 		header("location: dataeventcafe.php");
 	}
 	else if (isset($_POST['cancel']))
