@@ -267,12 +267,12 @@
         <div class="row">
           <div class="col-lg-6 col-lg-6 text-center">
             <div class="service-box mt-5 mx-auto">
-             <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Menu</a>
+             <a class="btn btn-primary btn-xl js-scroll-trigger" href="menucafe.php">Menu</a>
             </div>
           </div>
           <div class="col-lg-6 col-lg-6 text-center">
             <div class="service-box mt-5 mx-auto">
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Event</a>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="eventcafe.php">Event</a>
             </div>
           </div>
         </div>
