@@ -22,8 +22,12 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 			</tr>
 		</table>
 		<tr>
-				<td>Description</td>
-			<textarea></textarea>
+			 <div class="control-group">
+              <label class="control-label" for="desc">Deskripsi Event</label>
+              <div class="controls">
+               <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
+              </div>
+            </div>
 			</tr>
 			<br>
 			<td>Image</td>

@@ -1,0 +1,36 @@
+http://localhost/phpmyadmin/db_structure.php?server=1&db=dbcafe
+
+Appertize
+french fries= Hand cut wedges of Yukon Gold potatoes fried in canola oil and tossed with truffle sea salt.
+
+bruschetta= Grilled country bread with Roma tomatoes, olive oil, garlic and basil.
+
+four cheese garlic bread= Toasted French bread topped with romano, cheddar, jack and parmesan, with a light layer of roasted garlic butter.
+
+stuffed mushroom= Mushrooms caps baked with a filling of three choice cheeses, breadcrumbs and clams.
+
+
+main course
+chicken parmesan= Tender chicken breasts, lightly breaded and baked with our signature cheese and marinara sauce.
+
+fillet mignon= 10 ounce center cut filet, marinated in a medley of herbs, broiled to perfection and served with our famous veal sauce.
+
+chesse ravioli= Delicious cheese-stuffed ravioli topped with marinara and a trio of melted cheeses.
+
+fettuccine alfredo= Fresh, house-made fettucine tossed in a thick and creamy Alfredo sauce.
+
+
+dessert
+lemon meringue pie= Tart and creamy lemon custard filling with a mile-high billowy meringue top.
+
+Gluten-Free Chocolate Chip Muffins= Tender, hearty and studded with chocolate chips—these muffins have it all. They're vegan and gluten-free, too!
+
+Coffee Bourbon Chocolate Chip Ice Cream= Homemade coffee ice cream with bourbon and chocolate chips!
+
+
+drinks
+Sparkling Strawberry Sangria= Fresh strawberry puree meets a basil simple syrup—and some fizz—in this sparkling spin on sangria.
+
+Classic Margarita= The Margarita is a classic for a reason! Just three ingredients—tequila, orange liqueur, and lime juice. Salted rim optional.
+
+Iced Chai Latte= Make Iced Chai Lattes at home! This simple method uses cold-steeped chai, honey syrup, and milk. Make a big batch and enjoy it all week long!

@@ -8,7 +8,7 @@
 			echo "Jumlah: ".$row["jumlah_pemesanan_makanan"]."<br>";
 			//deskripsi gabisa keluar
 			echo "Description: ".$row["deskripsi_makanan"]."<br>";
-
+            
 			//image gabisa keluar
 			echo "Gambar: <br>";
 			echo "<img src='uploads/".$row['image_makanan']."'  height='150px' width='300px'/>"."<br>";
