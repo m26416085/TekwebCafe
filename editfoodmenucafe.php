@@ -20,13 +20,16 @@
 				<td>Jumlah Pemesanan</td>
 				<td><input type = "text" name = "jumlah"></td>
 			</tr>
+		</table>
 			<tr>
 				<td>Description</td>
-				<td><input type = "textarea" name = "description"></td>
+			<textarea></textarea>
 			</tr>
+			<table>
 			<tr>
 				<td>Image</td>
-				<td><input type = "text" name = "image"></td>
+				<td><input type = "blob" name = "image"></td>
+			</tr>
 			</table>
 			<tr>
 			<td>Type</td>
@@ -38,7 +41,7 @@
 		</tr>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Edit Data">
-		<input type="submit" name="back" value="Kembali">
+		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 	</body>
 </html>

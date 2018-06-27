@@ -1,16 +1,13 @@
 <?php
-//add php
-require_once("connect1.php");
-//1. cek apakah sudah ada _POST
-//2. ambil semua post, buatkan query "insert into";
-//3. redirect ke halaman read.php
+
+$db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 ?>
 <html>
 <head>
 </head>
 
 <body>
-	<form method = "post" action = "addfood.php">
+	<form method = "post" action = "addfood.php" enctype = "multipart/form-data">
 		<table>
 			<tr>
 				<td>Name</td>
@@ -24,15 +21,19 @@ require_once("connect1.php");
 				<td>Jumlah Pemesanan</td>
 				<td><input type = "text" name = "jumlah"></td>
 			</tr>
+		</table>
 			<tr>
-				<td>Description</td>
-				<td><input type = "textarea" name = "description"></td>
+			<td>Description</td>
+			<textarea></textarea>
 			</tr>
+			<br>
+			<td>Image</td>
+			<table>
 			<tr>
-				<td>Image</td>
-				<td><input type = "blob" name = "image"></td>
+				<input type="file" name="upload" id="upload"><br>
 			</tr>
 		</table>
+
 			<tr>
 			<td>Type</td>
 			<select name="type">
@@ -43,7 +44,9 @@ require_once("connect1.php");
 		</tr>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Add Data">
-		<input type="submit" name="back" value="Kembali">
+		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
 		</form>
 	</body>
 </html>
+
+

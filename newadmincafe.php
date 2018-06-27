@@ -73,12 +73,12 @@
             <li class="nav-item">
               <form action="admincafe.php" method="POST">
               <input type="submit" class="btn" name="logout" value="Logout">
+              </form>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-     <section id="form">
       <div class="container">
           <div class="col-lg-10 col-lg-8 mx-auto text-center">
           <form class="form-horizontal" action="newadmincafe.php" method="post">
@@ -144,7 +144,6 @@
           </fieldset>
         </form>
         </div>
-    </section>
-	
+      </div>
 </body>
 </html>

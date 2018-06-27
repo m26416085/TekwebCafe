@@ -21,15 +21,17 @@
 				<td>Jumlah Pemesanan</td>
 				<td><input type = "text" name = "jumlah"></td>
 			</tr>
+		</table>
 			<tr>
 				<td>Description</td>
-				<td><input type = "textarea" name = "description"></td>
+			<textarea></textarea>
 			</tr>
+			<table>
 			<tr>
 				<td>Image</td>
-				<td><input type = "file" name = "image"></td>
+				<td><input type = "blob" name = "image"></td>
 			</tr>
-			</table>
+		</table>
 			<td>Type</td>
 			<select name="type">
 			<option >Drinks</option>

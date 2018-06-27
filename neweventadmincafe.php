@@ -66,27 +66,126 @@
 <html>
 <head>
 	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Seljeff</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+   
+	<style type="text/css">
+   	body
+    	{
+    		margin-left: 25%;
+        	width: 50%;
+        	margin-top:10%;
+        	background-color:#f05f40;
+        	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+        	color: white;
+    	}
+    </style>
 </head>
 <body>
-	<form action="neweventadmincafe.php" method="post" enctype="multipart/form-data">
-		Nama Event: <input type="text" name="nama"> <input type="checkbox" name="butuh" onclick="cekpromo()" id="cb1">Centang jika menggunakan kode promo <br>
-		Deskripsi Event: <br><textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
-		Tanggal Event: <input type="date" name="tanggal""> <br>
-		Upload Gambar: <input type="file" name="upload" id="upload"> *harus berupa .jpg<br>
-		<p id="kp" style="display: none">Kode Promo: <input type="text" name="kodepromo"></p><br>
-		<script type="text/javascript">
-			function cekpromo(){
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="homecafe.php">Seljeff</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="neweventadmincafe.php">New Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="admincafe.php">Back</a>
+            </li>
+            <li class="nav-item">
+            	<form action="admincafe.php" method="POST">
+				<input type="submit" class="btn" name="logout" value="Logout">
+        </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	 <div class="container">
+          <div class="col-lg-10 col-lg-8 mx-auto text-center">
+          <form class="form-horizontal" action="neweventadmincafe.php" method="post" enctype="multipart/form-data">
+          <fieldset>
+            <div class="control-group">
+              <label class="control-label" for="nama">Nama Event</label>
+              <div class="controls">
+                <input type="text" name="nama" placeholder="" class="form-control input-lg" required=""><br> <input type="checkbox" name="butuh" onclick="cekpromo()" placeholder="" id="cb1">Centang jika menggunakan kode promo <br><br>
+                <p id="kp" style="display: none">Kode Promo: <input type="text" name="kodepromo"></p><br>
+                <script type="text/javascript">
+				function cekpromo(){
 				var test = document.getElementById("kp");
-				if (document.getElementById("cb1").checked == true){
-					test.style.display = "block";
+					if (document.getElementById("cb1").checked == true){
+						test.style.display = "block";
+					}
+					else{
+						test.style.display = "none";
+					}
 				}
-				else{
-					test.style.display = "none";
-				}
-			}
-		</script>
-		<input type="submit" name="tambah" value="Tambah Event">
-		<input type="submit" name="cancel" value="Batal">
-	</form>
+				</script>
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label" for="desc">Deskripsi Event</label>
+              <div class="controls">
+               <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
+              </div>
+            </div>
+         
+            <div class="control-group">
+              <label class="control-label" for="ug">Upload Gambar</label>
+              <div class="controls">
+                <input type="file" name="upload" id="upload"> *harus berupa .jpg<br><br>
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label" for="tglevent">Tanggal Event</label>
+              <div class="controls">
+                <input type="date" name="tanggal" placeholder="" class="form-control input-lg" required="">
+              </div>
+            </div>
+
+            <div class="control-group">
+              <!-- Button -->
+              <br>
+              <div class="controls">
+                <input type="submit" name="tambah" class="btn btn-success btn-block" value="Tambah Event">
+              </div>
+            </div>
+
+             <div class="control-group">
+              <!-- Button -->
+              <br>
+              <div class="controls">
+              <button class="btn btn-warning"><a href="admincafe.php" style="text-decoration: none;">Cancel</a></button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        </div>
+      </div>
 </body>
 </html>
