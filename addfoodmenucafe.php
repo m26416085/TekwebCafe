@@ -43,7 +43,7 @@ require_once("connect1.php");
 		</tr>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Add Data">
-		<input type="submit" name="back" value="Kembali">
+		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Back</a></button>
 		</form>
 	</body>
 </html>
