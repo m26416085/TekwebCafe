@@ -38,7 +38,7 @@
 		</tr>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Edit Data">
-		<input type="submit" name="back" value="Kembali">
+		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 	</body>
 </html>
