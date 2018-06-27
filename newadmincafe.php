@@ -78,7 +78,6 @@
         </div>
       </div>
     </nav>
-     <section id="form">
       <div class="container">
           <div class="col-lg-10 col-lg-8 mx-auto text-center">
           <form class="form-horizontal" action="newadmincafe.php" method="post">
@@ -130,7 +129,7 @@
               <!-- Button -->
               <br>
               <div class="controls">
-                <input type="submit" name="signup" class="btn btn-success btn-block" value="Signup">
+                <input type="Submit" name="signup" class="btn btn-success btn-block" value="Signup">
               </div>
             </div>
 
@@ -144,7 +143,6 @@
           </fieldset>
         </form>
         </div>
-    </section>
-	
+      </div>
 </body>
 </html>

@@ -93,7 +93,7 @@
     <section id="form">
       <div class="container">
           <div class="col-lg-10 col-lg-8 mx-auto text-center">
-          <form class="form-horizontal" action="newadmincafe.php" method="post">
+          <form class="form-horizontal" action="editadmincafe.php" method="post">
             <div id="legend" >
               <h1 class="" style="font-size: 60px; text-align: center;">Edit Data Member</h1>
             </div>
@@ -155,7 +155,7 @@
               <!-- Button -->
               <br>
               <div class="controls">
-                <input type="submit" name="signup" class="btn btn-success btn-block" value="Signup">
+                <input type="submit" name="save" class="btn btn-success btn-block" value="Save">
               </div>
             </div>
 
