@@ -16,7 +16,7 @@
 			$username = $_POST['username'];
 			$password = $_POST['password'];
 			mysqli_query($con, "UPDATE admincafe SET nama='$nama', tgllahir='$lahir', jk='$jk', alamat='$alamat', username='$username', password='$password' WHERE id = '$id'");
-			header("location: dataadmincafe.php");
+			header("location: admincafe.php");
 		}
 	}
 	else if (isset($_POST['cancel']))
@@ -85,6 +85,7 @@
             <li class="nav-item">
               <form action="admincafe.php" method="POST">
               <input type="submit" class="btn" name="logout" value="Logout">
+              </form>
             </li>
           </ul>
         </div>

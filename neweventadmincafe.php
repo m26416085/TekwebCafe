@@ -117,6 +117,7 @@
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
 				<input type="submit" class="btn" name="logout" value="Logout">
+        </form>
             </li>
           </ul>
         </div>
@@ -147,21 +148,21 @@
             </div>
 
              <div class="control-group">
-              <label class="control-label" for="alamat">Deskripsi Event</label>
+              <label class="control-label" for="desc">Deskripsi Event</label>
               <div class="controls">
                <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
               </div>
             </div>
          
             <div class="control-group">
-              <label class="control-label" for="jk">Upload Gambar</label>
+              <label class="control-label" for="ug">Upload Gambar</label>
               <div class="controls">
                 <input type="file" name="upload" id="upload"> *harus berupa .jpg<br><br>
               </div>
             </div>
 
              <div class="control-group">
-              <label class="control-label" for="usename">Tanggal Event</label>
+              <label class="control-label" for="tglevent">Tanggal Event</label>
               <div class="controls">
                 <input type="date" name="tanggal" placeholder="" class="form-control input-lg" required="">
               </div>
@@ -171,7 +172,7 @@
               <!-- Button -->
               <br>
               <div class="controls">
-                <input type="Submit" name="tambah" class="btn btn-success btn-block" value="Tambah Event">
+                <input type="submit" name="tambah" class="btn btn-success btn-block" value="Tambah Event">
               </div>
             </div>
 

@@ -73,6 +73,7 @@
             <li class="nav-item">
               <form action="admincafe.php" method="POST">
               <input type="submit" class="btn" name="logout" value="Logout">
+              </form>
             </li>
           </ul>
         </div>
@@ -129,7 +130,7 @@
               <!-- Button -->
               <br>
               <div class="controls">
-                <input type="Submit" name="signup" class="btn btn-success btn-block" value="Signup">
+                <input type="submit" name="signup" class="btn btn-success btn-block" value="Signup">
               </div>
             </div>
 
