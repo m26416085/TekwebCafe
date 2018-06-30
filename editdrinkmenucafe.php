@@ -61,24 +61,32 @@
     </nav>
       <form method = "post" action = "editdrink.php" enctype = "multipart/form-data">
 		 <div class="col-lg-10 col-lg-8 mx-auto text-center">
+
+		 	 <div class="control-group">
+              <label class="control-label" for="id">ID</label>
+              <div class="controls">
+                <input type="text" name="id" placeholder="" class="form-control input-lg" value="<?php echo $_GET['id_minuman']; ?>" readOnly>
+              </div>
+            </div>
+
             <div class="control-group">
               <label class="control-label" for="name">Name</label>
               <div class="controls">
-               <input type = "text" class="form-control input-lg" name = "name">
+               <input type = "text" class="form-control input-lg"  value="<?php echo $_GET['nama_minuman']; ?>" name = "name">
               </div>
             </div>
 
              <div class="control-group">
               <label class="control-label" for="price">Price</label>
               <div class="controls">
-               <input type = "text" class="form-control input-lg" name = "price" >
+               <input type = "text" class="form-control input-lg"  value="<?php echo $_GET['harga_minuman']; ?>" name = "price" >
               </div>
             </div>
 			
 			<div class="control-group">
               <label class="control-label" for="desc">Deskripsi Minuman</label>
               <div class="controls">
-               <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
+               <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"> <?php echo $_GET['deskripsi_minuman']; ?></textarea> <br>
               </div>
             </div>
 
