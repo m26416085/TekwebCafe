@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+  }
   $con = mysqli_connect("localhost", "root", "", "dbcafe");
   $result = mysqli_query($con, "SELECT * FROM eventcafe");
 

@@ -1,6 +1,14 @@
 <?php
+    session_start();
+    if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+    }
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
 	$result = mysqli_query($con, "SELECT * FROM eventcafe");
+    session_start();
+    if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+    }
 	while ($row = mysqli_fetch_array($result))
 	{
 		echo "Nama Event: ".$row["namaevent"]."<br>";

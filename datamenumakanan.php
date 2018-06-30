@@ -1,6 +1,10 @@
 <?php
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
 	$result = mysqli_query($con, "SELECT * FROM food");
+    session_start();
+    if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+    }
 	while ($row = mysqli_fetch_array($result))
 	{
 			echo "Nama: ".$row["nama_makanan"]."<br>";

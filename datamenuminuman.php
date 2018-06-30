@@ -1,6 +1,9 @@
 <?php
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
 	session_start();
+    if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+    }
 	$result = mysqli_query($con, "SELECT * FROM drink");
 	while ($row = mysqli_fetch_array($result))
 	{

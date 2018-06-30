@@ -1,5 +1,8 @@
 <?php
-
+session_start();
+if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+  }
 $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 ?>
 <html>

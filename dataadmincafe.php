@@ -1,6 +1,9 @@
 <?php
 	$con = mysqli_connect("localhost", "root", "", "dbcafe");
 	session_start();
+    if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+    }
 	echo 	 "<h1 class=navbar-brand; style=font-size=60px;>Data Admin</h1>"."<br>";
 	$result = mysqli_query($con, "SELECT * FROM admincafe");
 	while ($row = mysqli_fetch_array($result))

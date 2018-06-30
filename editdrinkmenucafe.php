@@ -1,5 +1,9 @@
 <?php
 	require_once("connect1.php");
+  session_start();
+  if(empty($_SESSION['idnow'])){
+        header("location: homecafe.php");
+  }
 ?>
 <html>
 <head>
