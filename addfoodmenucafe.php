@@ -103,7 +103,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 	</form>
 
   <form action="datamenumakanan.php" action="post">
-    <button class="btn btn-warning" style="text-decoration: none;">Cancel</button>
+    <button class="btn btn-warning" style="color: white;">Cancel</button>
   </form>
 	</body>
 </html>

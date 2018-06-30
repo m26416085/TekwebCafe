@@ -108,7 +108,9 @@
               </div>
             </div>
 		<input type = "submit" class="btn btn-success" value = "Edit Data">
-		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
+  <form action="datamenumakanan.php" action="post">
+    <button class="btn btn-warning" style="color: white;">Cancel</button>
+  </form>
 	</body>
 </html>

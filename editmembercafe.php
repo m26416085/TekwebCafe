@@ -144,15 +144,10 @@
                 <input type="submit" name="save" class="btn btn-success btn-block" value="Save">
               </div>
             </div>
-
-             <div class="control-group">
-              <!-- Button -->
-              <br>
-              <div class="controls">
-              <button class="btn btn-warning"><a href="datamembercafe.php" style="text-decoration: none;">Cancel</a></button>
-              </div>
-            </div>
           </fieldset>
+        </form>
+        <form action="dataeventcafe.php" action="post">
+        <button class="btn btn-warning" style="color: white;">Cancel</button>
         </form>
 </body>
 </html>

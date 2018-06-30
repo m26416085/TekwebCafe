@@ -47,9 +47,6 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="editdrinkmenucafe.php">Edit Drink</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="datamenuminuman.php">Back</a>
             </li>
             <li class="nav-item">
@@ -66,7 +63,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
             <div class="control-group">
               <label class="control-label" for="name">Name</label>
               <div class="controls">
-               <input type = "text" class="form-control input-lg" name = "name" required>
+               <input type = "text" class="form-control input-lg" name = "name">
               </div>
             </div>
 
@@ -100,10 +97,9 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
               </div>
             </div>
 		<input type = "submit" class="btn btn-success" value = "Add Data">
-		
 	</form>
-  <form action="datamenuminuman.php">
-    <button class="btn btn-warning" style="text-decoration: none;">Cancel</a></button>
-  </form>
+	<form action="datamenuminuman.php" action="post">
+    <button class="btn btn-warning" style="color: white;">Cancel</button>
+  	</form>
 	</body>
 </html>

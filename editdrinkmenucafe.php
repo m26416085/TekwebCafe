@@ -49,7 +49,7 @@
               <a class="nav-link" href="adddrinkmenucafe.php">Add Drink</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href=".php">Back</a>
+              <a class="nav-link js-scroll-trigger" href="datamenuminuman.php">Back</a>
             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
@@ -106,7 +106,9 @@
               </div>
             </div>
 		<input type = "submit" class="btn btn-success" value = "Add Data">
-		<button class="btn btn-warning"><a href="datamenuminuman.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
+	<form action="datamenuminuman.php" action="post">
+    <button class="btn btn-warning" style="color: white;">Cancel</button>
+  	</form>
 	</body>
 </html>
