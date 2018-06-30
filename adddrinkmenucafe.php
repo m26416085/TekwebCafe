@@ -16,10 +16,6 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 				<td>Price</td>
 				<td><input type = "text" name = "price"></td>
 			</tr>
-			<tr>
-				<td>Jumlah Pemesanan</td>
-				<td><input type = "text" name = "jumlah"></td>
-			</tr>
 		</table>
 		<tr>
 			 <div class="control-group">
@@ -42,7 +38,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 			</select><br>
 		<form action="admincafe.php" method="post">
 		<input type = "submit" value = "Add Data">
-		<input type="submit" name="back" value="Kembali">
+		<button class="btn btn-warning"><a href="datamenuminuman.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 	</body>
 </html>

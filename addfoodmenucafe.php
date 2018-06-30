@@ -18,10 +18,6 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 				<td>Price</td>
 				<td><input type = "text" name = "price"></td>
 			</tr>
-			<tr>
-				<td>Jumlah Pemesanan</td>
-				<td><input type = "text" name = "jumlah"></td>
-			</tr>
 		</table>
 			<tr>
 			  <div class="control-group">
