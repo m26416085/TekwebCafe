@@ -68,13 +68,8 @@
               <a class="nav-link" href="newadmincafe.php">New Admin</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="dataadmincafe.php">Data Admin</a>
+              <a class="nav-link js-scroll-trigger" href="admincafe.php">Back</a>
             </li>
-             <li class="nav-item">
-            <form id="form" action="admincafe.php" method="post">
-            <input type="submit" class="btn" name="back" value="Back">
-            </form>
-             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
 				<input type="submit" class="btn" name="logout" value="Logout">
