@@ -9,7 +9,7 @@
 		$username=$_POST['username'];
 		$password=$_POST['password'];
 		mysqli_query($con, "INSERT INTO membercafe VALUES (null,'$nama','$lahir','$jk','$alamat','$username','$password')");
-		header("location: eventcafe.php");
+		header("location: homecafe.php");
 	}
   if(isset($_POST['cancel']))
   {
