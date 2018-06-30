@@ -73,7 +73,7 @@
               <a class="nav-link" href="datamembercafe.php">Back</a>
             </li>
             <li class="nav-item">
-              <form action="datamembercafe.php" method="POST">
+              <form action="datamembercafe .php" method="POST">
             <input type="submit" class="btn" name="logout" value="Logout">
           </form>
             </li>

@@ -157,7 +157,7 @@
             <div class="control-group">
               <label class="control-label" for="ug">Upload Gambar</label>
               <div class="controls">
-                <input type="file" name="upload" id="upload"> *harus berupa .jpg<br><br>
+                <input type="file"  class="btn btn-default btn-file" name="upload" id="upload"> *harus berupa .jpg<br><br>
               </div>
             </div>
 

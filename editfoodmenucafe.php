@@ -6,8 +6,14 @@
 </head>
 
 <body>
-	<form method = "post" action = "editfood.php">
+	<form method = "post" action = "editfood.php"  enctype = "multipart/form-data">
 		<table>
+			 <div class="control-group">
+              <label class="control-label" for="id">ID</label>
+              <div class="controls">
+                <input type="text" name="id" placeholder="" class="form-control input-lg" value="<?php echo $_GET['id']; ?>" readOnly>
+              </div>
+            </div>
 			<tr>
 				<td>Name</td>
 				<td><input type = "text" name = "name"></td>
@@ -16,19 +22,19 @@
 				<td>Price</td>
 				<td><input type = "text" name = "price"></td>
 			</tr>
-			<tr>
-				<td>Jumlah Pemesanan</td>
-				<td><input type = "text" name = "jumlah"></td>
-			</tr>
 		</table>
 			<tr>
-				<td>Description</td>
-			<textarea></textarea>
+			<div class="control-group">
+              <label class="control-label" for="desc">Deskripsi Makanan</label>
+              <div class="controls">
+               <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
+              </div>
+            </div>
 			</tr>
 			<table>
 			<tr>
 				<td>Image</td>
-				<td><input type = "blob" name = "image"></td>
+				<td><input type = "file" name = "upload"></td>
 			</tr>
 			</table>
 			<tr>
