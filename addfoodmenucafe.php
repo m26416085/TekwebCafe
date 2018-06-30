@@ -100,8 +100,8 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
               </div>
             </div>
 		<input type = "submit" class="btn btn-success" value = "Add Data">
-		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
+    <button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
 	</body>
 </html>
 
