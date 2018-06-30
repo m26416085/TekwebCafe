@@ -48,9 +48,6 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="editfoodmenucafe.php">Edit Food</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="datamenumakanan.php">Back</a>
             </li>
             <li class="nav-item">
