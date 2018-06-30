@@ -4,12 +4,11 @@
 	$result = mysqli_query($con, "SELECT * FROM drink");
 	while ($row = mysqli_fetch_array($result))
 	{
-			echo "Nama: ".$row["nama_minuman"]."<br>";
+			echo "Nama Minuman: ".$row["nama_minuman"]."<br>";
 			echo "Harga: ".$row["harga_minuman"]."<br>";
-			echo "Jumlah: ".$row["jumlah_pemesanan_minuman"]."<br>";
+
 			//deskripsi gabisa keluar
-			echo "Description: ".$row["deskripsi_minuman"]."<br>";
-			echo "Image: ".$row["image_minuman"]."<br>";
+			echo "Deskripsi: ".$row["deskripsi_minuman"]."<br>";
 
 			//image gabisa keluar
 			echo "<img src='uploads/".$row['image_minuman']."'  height='150px' width='300px'/>"."<br>";
@@ -18,7 +17,7 @@
 			echo '<a href="editdrinkmenucafe.php? id_minuman='.$row[0].'&nama_minuman='.$row[1].'&harga_minuman='.$row[2].'&jumlah_pemesanan_minuman='.$row[3].'&deskripsi_minuman='.$row[4].'&image_minuman='.$row[5].'"><button button class= btn btn-danger; style=color:#f05f40;> Edit </button></a>';
 			echo '<a href="deletedrink.php? id='.$row[0].'""><button button class= btn btn-danger; style=color:#f05f40;>Hapus</button></a>';
 
-			echo "<br />";
+			echo "<br /> <br>";
 		
 	}
 ?>
