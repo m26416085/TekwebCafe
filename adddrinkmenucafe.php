@@ -50,7 +50,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
               <a class="nav-link" href="editdrinkmenucafe.php">Edit Drink</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="datamenuminumancafe.php">Back</a>
+              <a class="nav-link js-scroll-trigger" href="datamenuminuman.php">Back</a>
             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">

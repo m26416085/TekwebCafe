@@ -49,7 +49,7 @@
               <a class="nav-link" href="adddrinkmenucafe.php">Add Drink</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="admincafe.php">Back</a>
+              <a class="nav-link js-scroll-trigger" href=".php">Back</a>
             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
@@ -59,41 +59,46 @@
         </div>
       </div>
     </nav>
-	<form method = "post" action = "editdrink.php" enctype = "multipart/form-data">
-		<table>	
-			ID: <br>
-			<input type="text" name="id">
+      <form method = "post" action = "editdrink.php" enctype = "multipart/form-data">
+		 <div class="col-lg-10 col-lg-8 mx-auto text-center">
+            <div class="control-group">
+              <label class="control-label" for="name">Name</label>
+              <div class="controls">
+               <input type = "text" class="form-control input-lg" name = "name">
+              </div>
+            </div>
 
-			<tr>
-				<td>Name</td>
-				<td><input type = "text" name = "name"></td>
-			</tr>
-			<tr>
-				<td>Price</td>
-				<td><input type = "text" name = "price"></td>
-			</tr>
-			<tr>
-				<td>Jumlah Pemesanan</td>
-				<td><input type = "text" name = "jumlah"></td>
-			</tr>
-		</table>
-			<tr>
-				<td>Description</td>
-			<textarea name="description"></textarea>
-			</tr>
-			<table>
-			<tr>
-				<td>Image</td>
-				<td><input type = "file" name = "image"></td>
-			</tr>
-		</table>
-			<td>Type</td>
-			<select name="type">
-			<option >Drinks</option>
-			</select><br>
-		<form action="datamenuminuman.php" method="POST">
-		<input type = "submit" value = "Edit Data">
-		<input type="submit" name="back" value="Kembali">
+             <div class="control-group">
+              <label class="control-label" for="price">Price</label>
+              <div class="controls">
+               <input type = "text" class="form-control input-lg" name = "price" >
+              </div>
+            </div>
+			
+			<div class="control-group">
+              <label class="control-label" for="desc">Deskripsi Minuman</label>
+              <div class="controls">
+               <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
+              </div>
+            </div>
+
+            <div class="control-group">
+              <label class="control-label" for="img">Upload Image</label>
+              <div class="controls">
+               <input type = "file"  class="btn btn-default btn-file" name = "upload"> <br>
+              </div>
+            </div>
+			
+			 <div class="control-group">
+              <label class="control-label" for="type">Type</label>
+              <div class="controls">
+               	<select name="type">
+				<option >Drinks</option>
+				</select><br><br>
+              </div>
+            </div>
+		<input type = "submit" class="btn btn-success" value = "Add Data">
+		<button class="btn btn-warning"><a href="datamenuminuman.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 	</body>
 </html>
