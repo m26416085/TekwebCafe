@@ -164,7 +164,7 @@
              <div class="control-group">
               <label class="control-label" for="tglevent">Tanggal Event</label>
               <div class="controls">
-                <input type="date" name="tanggal" placeholder="" class="form-control input-lg" required="">
+                <input type="date" name="tanggal" placeholder="" min="2018-01-01" class="form-control input-lg" required="">
               </div>
             </div>
 

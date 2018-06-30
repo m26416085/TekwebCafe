@@ -9,8 +9,8 @@
 		echo "Kode Promo: ".$row["kodepromoevent"]."<br>";
 		echo "Gambar: <br>";
 		echo "<img src='uploads/".$row['gambarevent']."'  height='150px' width='300px'/>"."<br>";
-		echo '<a href="? idevent='.$row[0].'&namaevent='.$row[1].'&deskripsi='.$row[2].'&tanggal='.$row[3].'&kodepromo='.$row[4].'&gambar='.$row[5].'"><button  class= btn btn-danger; style=color:#f05f40;> Edit </button></a>';
-		echo '<a href="? idevent='.$row[0].'""><button button class= btn btn-danger; style=color:#f05f40;>Hapus</button></a>';
+		echo '<a href="editeventcafe.php? idevent='.$row[0].'&namaevent='.$row[1].'&deskripsi='.$row[2].'&tanggal='.$row[3].'&kodepromo='.$row[4].'&gambar='.$row[5].'"><button  class= btn btn-danger; style=color:#f05f40;> Edit </button></a>';
+		echo '<a href="deleteeventcafe.php? idevent='.$row[0].'""><button button class= btn btn-danger; style=color:#f05f40;>Hapus</button></a>';
 		echo "<br />";
 	}
 ?>
