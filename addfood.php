@@ -3,8 +3,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 $id = $_POST["id"];
 $name = $_POST["name"];
 $price= $_POST["price"];
-$jumlah = $_POST["jumlah"];
-$description = $_POST["description"];
+$description = $_POST["deskripsi"];
 $image = basename($_FILES["upload"]["name"]);
 $type = $_POST["type"];
 
