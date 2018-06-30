@@ -101,7 +101,10 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
             </div>
 		<input type = "submit" class="btn btn-success" value = "Add Data">
 	</form>
-    <button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
+
+  <form action="datamenumakanan.php" action="post">
+    <button class="btn btn-warning" style="text-decoration: none;">Cancel</button>
+  </form>
 	</body>
 </html>
 

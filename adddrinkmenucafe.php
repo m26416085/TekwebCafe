@@ -66,7 +66,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
             <div class="control-group">
               <label class="control-label" for="name">Name</label>
               <div class="controls">
-               <input type = "text" class="form-control input-lg" name = "name">
+               <input type = "text" class="form-control input-lg" name = "name" required>
               </div>
             </div>
 
@@ -100,7 +100,10 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
               </div>
             </div>
 		<input type = "submit" class="btn btn-success" value = "Add Data">
-		<button class="btn btn-warning"><a href="datamenuminuman.php" style="text-decoration: none;">Cancel</a></button>
+		
 	</form>
+  <form action="datamenuminuman.php">
+    <button class="btn btn-warning" style="text-decoration: none;">Cancel</a></button>
+  </form>
 	</body>
 </html>
