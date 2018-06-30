@@ -6,9 +6,12 @@
 </head>
 
 <body>
-	<form method = "post" action = "editdrink.php">
+	<form method = "post" action = "editdrink.php" enctype = "multipart/form-data">
 		<table>
 			
+			ID: <br>
+			<input type="text" name="id">
+
 			<tr>
 				<td>Name</td>
 				<td><input type = "text" name = "name"></td>
@@ -24,12 +27,12 @@
 		</table>
 			<tr>
 				<td>Description</td>
-			<textarea></textarea>
+			<textarea name="description"></textarea>
 			</tr>
 			<table>
 			<tr>
 				<td>Image</td>
-				<td><input type = "blob" name = "image"></td>
+				<td><input type = "file" name = "image"></td>
 			</tr>
 		</table>
 			<td>Type</td>
