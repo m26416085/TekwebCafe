@@ -39,46 +39,73 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 </head>
 
 <body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="homecafe.php">Seljeff</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="editfoodmenucafe.php">Edit Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="datamenumakanan.php">Back</a>
+            </li>
+            <li class="nav-item">
+            	<form action="admincafe.php" method="POST">
+				<input type="submit" class="btn" name="logout" value="Logout">
+        		</form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 	<form method = "post" action = "addfood.php" enctype = "multipart/form-data">
 		 <div class="col-lg-10 col-lg-8 mx-auto text-center">
-		<table>
-			<tr>
-				<td>Name</td>
-				<td><input type = "text" name = "name"></td>
-			</tr>
-			<tr>
-				<td>Price</td>
-				<td><input type = "text" name = "price"></td>
-			</tr>
-		</table>
-			<tr>
-			  <div class="control-group">
+		 	<form method = "post" action = "editfood.php"  enctype = "multipart/form-data">
+            <div class="control-group">
+              <label class="control-label" for="name">Name</label>
+              <div class="controls">
+               <input type = "text" class="form-control input-lg" name = "name">
+              </div>
+            </div>
+
+             <div class="control-group">
+              <label class="control-label" for="price">Price</label>
+              <div class="controls">
+               <input type = "text" class="form-control input-lg" name = "price" >
+              </div>
+            </div>
+			
+			<div class="control-group">
               <label class="control-label" for="desc">Deskripsi Makanan</label>
               <div class="controls">
                <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
               </div>
             </div>
-			</tr>
-			<br>
-			<td>Image</td>
-			<table>
-			<tr>
-				<input type="file" class="btn btn-default btn-file" name="upload" id="upload"><br>
-			</tr>
-		</table>
 
-			<tr>
-			<td>Type</td>
-			<select name="type">
-			<option >Appertizer</option>
-			<option >Main Course</option>
-			<option >Dessert</option>
-			</select><br>
-		</tr>
-		<form action="admincafe.php" method="post">
-		<input type = "submit" value = "Add Data"  class="btn btn-success">
+            <div class="control-group">
+              <label class="control-label" for="img">Upload Image</label>
+              <div class="controls">
+               <input type = "file"  class="btn btn-default btn-file" name = "upload"> <br>
+              </div>
+            </div>
+			
+			 <div class="control-group">
+              <label class="control-label" for="type">Type</label>
+              <div class="controls">
+               	<select name="type">
+				<option >Appertizer</option>
+				<option >Main Course</option>
+				<option >Dessert</option>
+				</select><br><br>
+              </div>
+            </div>
+		<input type = "submit" class="btn btn-success" value = "Add Data">
 		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
-		</form>
+	</form>
 	</body>
 </html>
 

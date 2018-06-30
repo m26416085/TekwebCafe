@@ -70,6 +70,11 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="dataadmincafe.php">Data Admin</a>
             </li>
+             <li class="nav-item">
+            <form id="form" action="admincafe.php" method="post">
+            <input type="submit" class="btn" name="back" value="Back">
+            </form>
+             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
 				<input type="submit" class="btn" name="logout" value="Logout">
@@ -79,8 +84,6 @@
         </div>
       </div>
     </nav>
-	<form id="form" action="admincafe.php" method="post">
-		<input type="submit" class="btn" style="color:#f05f40;" name="back" value="Back">
-	</form>
+	
 </body>
 </html>

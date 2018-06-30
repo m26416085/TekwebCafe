@@ -5,7 +5,6 @@
 	{
 			echo "Nama: ".$row["nama_makanan"]."<br>";
 			echo "Harga: ".$row["harga_makanan"]."<br>";
-			echo "Jumlah: ".$row["jumlah_pemesanan_makanan"]."<br>";
 			//deskripsi gabisa keluar
 			echo "Description: ".$row["deskripsi_makanan"]."<br>";
             
@@ -13,11 +12,11 @@
 			echo "Gambar: <br>";
 			echo "<img src='uploads/".$row['image_makanan']."'  height='150px' width='300px'/>"."<br>";
 			
-			echo '<a href="editfoodmenucafe.php? id='.$row[0].'&nama_makanan='.$row[1].'&harga_makanan='.$row[2].'&jumlah_pemesanan_makanan='.$row[3].'&deskripsi_makanan='.$row[4].'&image_makanan='.$row[5].'">';
+			echo '<a href="editfoodmenucafe.php? id='.$row[0].'&nama_makanan='.$row[1].'&harga_makanan='.$row[2].'&deskripsi_makanan='.$row[4].'&image_makanan='.$row[5].'">';
 
 			echo "Image: ".$row["image_makanan"]."<br>";
 
-			echo '<a href="editfoodmenucafe.php? id='.$row[0].'&nama_makanan='.$row[1].'&harga_makanan='.$row[2].'&jumlah_pemesanan_makanan='.$row[3].'&deskripsi_makanan='.$row[4].'&image_makanan='.$row[5].'"><button class= btn btn-danger; style=color:#f05f40;> Edit </button></a>';
+			echo '<a href="editfoodmenucafe.php? id='.$row[0].'&nama_makanan='.$row[1].'&harga_makanan='.$row[2].'&deskripsi_makanan='.$row[4].'&image_makanan='.$row[5].'"><button class= btn btn-danger; style=color:#f05f40;> Edit </button></a>';
 			echo '<a href="deletefood.php? id='.$row[0].'""><button class= btn btn-danger; style=color:#f05f40;>Hapus</button></a>';
 
 			echo "<br />";
