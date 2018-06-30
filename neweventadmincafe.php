@@ -116,8 +116,8 @@
             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
-				<input type="submit" class="btn" name="logout" value="Logout">
-        </form>
+				      <input type="submit" class="btn" name="logout" value="Logout">
+              </form>
             </li>
           </ul>
         </div>
@@ -134,16 +134,16 @@
                 <input type="text" name="nama" placeholder="" class="form-control input-lg" required=""><br> <input type="checkbox" name="butuh" onclick="cekpromo()" placeholder="" id="cb1">Centang jika menggunakan kode promo <br><br>
                 <p id="kp" style="display: none">Kode Promo: <input type="text" name="kodepromo"></p><br>
                 <script type="text/javascript">
-				function cekpromo(){
-				var test = document.getElementById("kp");
-					if (document.getElementById("cb1").checked == true){
-						test.style.display = "block";
-					}
-					else{
-						test.style.display = "none";
-					}
-				}
-				</script>
+				        function cekpromo(){
+				                             var test = document.getElementById("kp");
+                            					if (document.getElementById("cb1").checked == true){
+                            						test.style.display = "block";
+                            					}
+                            					else{
+                            						test.style.display = "none";
+                            					}
+				                            }
+				        </script>
               </div>
             </div>
 
