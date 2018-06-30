@@ -28,7 +28,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
 	<style type="text/css">
    	body
     	{
-    		margin-left: 25%;
+    		  margin-left: 25%;
         	width: 50%;
         	margin-top:10%;
         	background-color:#f05f40;
@@ -55,7 +55,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
             </li>
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
-				<input type="submit" class="btn" name="logout" value="Logout">
+				      <input type="submit" class="btn" name="logout" value="Logout">
         		</form>
             </li>
           </ul>
@@ -64,7 +64,6 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
     </nav>
 	<form method = "post" action = "addfood.php" enctype = "multipart/form-data">
 		 <div class="col-lg-10 col-lg-8 mx-auto text-center">
-		 	<form method = "post" action = "editfood.php"  enctype = "multipart/form-data">
             <div class="control-group">
               <label class="control-label" for="name">Name</label>
               <div class="controls">
