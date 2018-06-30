@@ -78,7 +78,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
             </div>
 			
 			<div class="control-group">
-              <label class="control-label" for="desc">Deskripsi Makanan</label>
+              <label class="control-label" for="desc">Deskripsi Minuman</label>
               <div class="controls">
                <textarea rows="15" cols="60" placeholder="Masukkan deskripsi..." name="deskripsi"></textarea> <br>
               </div>
@@ -100,7 +100,7 @@ $db = mysqli_connect("127.0.0.1","root","","dbcafe") or die(mysqli_error($db));
               </div>
             </div>
 		<input type = "submit" class="btn btn-success" value = "Add Data">
-		<button class="btn btn-warning"><a href="datamenumakanan.php" style="text-decoration: none;">Cancel</a></button>
+		<button class="btn btn-warning"><a href="datamenuminuman.php" style="text-decoration: none;">Cancel</a></button>
 	</form>
 	</body>
 </html>
