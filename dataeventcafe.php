@@ -75,6 +75,7 @@
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
 				<input type="submit" class="btn" name="logout" value="Logout">
+                </form>
             </li>
           </ul>
         </div>

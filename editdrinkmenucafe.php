@@ -58,6 +58,7 @@
             <li class="nav-item">
             	<form action="admincafe.php" method="POST">
 				<input type="submit" class="btn" name="logout" value="Logout">
+      </form>
             </li>
           </ul>
         </div>
@@ -97,7 +98,7 @@
             <div class="control-group">
               <label class="control-label" for="img">Upload Image</label>
               <div class="controls">
-               <input type = "file"  class="btn btn-default btn-file" name = "upload"> <br>
+               <input type = "file"  class="btn btn-default btn-file" name ="upload"> <br>
               </div>
             </div>
 			
@@ -109,7 +110,7 @@
 				</select><br><br>
               </div>
             </div>
-		<input type = "submit" class="btn btn-success" value = "Add Data">
+		<input type = "submit" class="btn btn-success" value = "Edit Data">
 	</form>
 	<form action="datamenuminuman.php" action="post">
     <button class="btn btn-warning" style="color: white;">Cancel</button>
