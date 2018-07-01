@@ -86,10 +86,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Menu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Event</a>
+              <a class="nav-link js-scroll-trigger" href="#login">Menu</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#login">Login</a>
@@ -171,109 +168,32 @@
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Steak
-                  </div>
-                </div>
-              </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Rice
-                  </div>
-                </div>
-              </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Turkey
-                  </div>
-                </div>
-              </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Deserts
-                  </div>
-                </div>
-              </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Sushi
-                  </div>
-                </div>
-              </div>
             </a>
           </div>
           <div class="col-lg-4 col-sm-6">
             <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
               <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                   Pizza
-                  </div>
-                </div>
-              </div>
             </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-dark text-white">
-     <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-lg-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-             <a class="btn btn-primary btn-xl js-scroll-trigger" href="menucafe.php">Menu</a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-lg-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <a class="btn btn-primary btn-xl js-scroll-trigger" href="eventcafe.php">Event</a>
-            </div>
           </div>
         </div>
       </div>
@@ -281,6 +201,7 @@
 
     <section id="login">
       <div class="container">
+        <h3 class="mb-3">Login Here to See Our Menu and Events!</h3>
         <form action = homecafe.php method = "post">
         Username:<br> <input type="text" class="form-control" name="username"><br><br>
         Password:<br> <input type="password" class="form-control" name="password"><br><br>
