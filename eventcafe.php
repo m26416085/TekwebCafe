@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+=======
+
+<?php
+	session_start();
+	if(empty($_SESSION['idnow'])){
+    header("location: homecafe.php");
+	}
+?>
+
+>>>>>>> a402a0fa101deafecf4340b8a35401f97edd49d5
 <!DOCTYPE html>
 <html>
 <head>
