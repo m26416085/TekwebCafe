@@ -98,7 +98,7 @@
             </div>
 			
 			 <div class="control-group">
-              <label class="control-label" for="img">Type</label>
+              <label class="control-label" for="type">Type</label>
               <div class="controls">
                	<select name="type">
 				<option >Appertizer</option>
