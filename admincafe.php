@@ -13,7 +13,7 @@
 	$result = mysqli_query($con, "SELECT * FROM admincafe");
 	while ($row = mysqli_fetch_array($result))
 	{
-		if ($row['nama'] == $_SESSION['usernow'])
+		if ($row['id'] == $_SESSION['idnow'])
 		{
 			echo "Nama: ".$row["nama"]."	".'<a href="editadmincafe.php? id='.$row[0].'&name='.$row[1].'&tgllahir='.$row[2].'&jk='.$row[3].'&alamat='.$row[4].'&username='.$row[5].'"><button class= btn> Edit </button></a>'."<br>";
 			echo "Tanggal Lahir: ".$row["tgllahir"]."<br>";

@@ -1,4 +1,9 @@
-
+<?php
+	session_start();
+	if(empty($_SESSION['idnow'])){
+    header("location: homecafe.php");
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>

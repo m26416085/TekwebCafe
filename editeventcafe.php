@@ -52,11 +52,12 @@ if(empty($_SESSION['idnow'])){
     }
 
     $image=basename( $_FILES["upload"]["name"]); // used to store the filename in a variable
+    $id=$_POST['id'];
     $nama = $_POST['nama'];
     $tanggal = $_POST['date'];
     $deskripsi = $_POST['deskripsi'];
     $promo = $_POST['kodepromo'];
-    mysqli_query($con, "INSERT INTO eventcafe VALUES (null, '$nama', '$deskripsi', '$tanggal', '$promo', '$image')");
+    mysqli_query($con,"UPDATE eventcafe SET namaevent='$nama',deskripsievent='$deskripsi', tanggalevent='$tanggal', kodepromoevent='$promo', gambarevent='$image' WHERE idevent = '$id'");
     header("location: dataeventcafe.php");
 
   }
@@ -130,6 +131,15 @@ if(empty($_SESSION['idnow'])){
           <fieldset>
             <div class="control-group">
               <label class="control-label" for="nama">Nama Event</label>
+
+              <div class="control-group">
+              <label class="control-label" for="desc">ID Event</label>
+              <div class="controls">
+               <input type="text" name="id" value="<?php echo $_GET['idevent']; ?>" readOnly><br>
+              </div>
+              </div>
+         
+
               <div class="controls">
                 <input type="text" name="nama"  value="<?php echo $_GET['namaevent'] ?>" placeholder="" class="form-control input-lg" required=""><br> <input type="checkbox" name="butuh" onclick="cekpromo()" placeholder="" id="cb1">Centang jika menggunakan kode promo <br><br>
                 <p id="kp" style="display: none">Kode Promo: <input type="text" name="kodepromo" value="<?php echo $_GET['kodepromo'] ?>"></p><br>
